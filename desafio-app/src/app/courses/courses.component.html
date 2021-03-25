@@ -1,17 +1,16 @@
-
-<div class="m-5">
+<div class="m-4 img-fluid">
   <mat-card>
-    <div class="row">
-      <div class="col-3 my-auto">
+    <div class="row img-fluid">
+      <div class="col-12 col-md-3 my-auto img-fluid">
         <h3 class="my-auto">Cursos</h3>
       </div>
-      <div class="col-6 my-auto">
+      <div class="col-12 col-md-6 my-auto img-fluid">
         <mat-form-field appearance="legacy">
           <input class="my-auto" matInput placeholder="Pesquisa Cursos">
           <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
       </div>
-      <div class="col-3 my-auto">
+      <div class="col-12 col-md-3 my-auto img-fluid">
         <button mat-stroked-button color="accent">
           <mat-icon>filter_list</mat-icon> Filtro
         </button>
@@ -20,20 +19,30 @@
   </mat-card>
 </div>
 
-
-<div class="m-1 col-3">
-  <mat-card class="example-card">
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>
+<div class="row col-10 mx-auto">
+  <div class="col-12 col-md-3">
+    <mat-card class="example-card">
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <h2>
+          {{title}}
+        </h2>
+      </mat-card-content>
+      <mat-divider></mat-divider>
+      <div class="row mt-4">
+        <div class="col-6">
+          <mat-icon matSuffix>alarm</mat-icon>
+        </div>
+        <div class="col-3">
+          <mat-icon matSuffix>playlist_add_check</mat-icon>
+        </div>
+        <div class="col-3">
+          <mat-icon matSuffix>grade</mat-icon>
+        </div>
+      </div>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Visualizar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
 </div>

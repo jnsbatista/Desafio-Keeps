@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { MainNavModule } from './main-nav/main-nav.module';
@@ -27,7 +28,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule
 
   ],
   providers: [],

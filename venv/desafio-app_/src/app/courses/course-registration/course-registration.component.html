@@ -1,0 +1,59 @@
+<button mat-icon-button style="margin: 1%;">
+    <mat-icon amatSuffix color="accent">keyboard_arrow_left</mat-icon>
+</button>
+<div>
+    <mat-card style="margin: 2%;">
+        <div class="row">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>
+                <mat-icon matSuffix>flag</mat-icon>
+                Nome do curso</mat-label>
+                <input matInput placeholder="Ex. Pizza" value="">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <mat-label>
+                    <mat-icon matSuffix>category</mat-icon>
+                    Categoria
+                </mat-label>
+                <mat-select>
+                    <mat-option value="one">First option</mat-option>
+                    <mat-option value="two">Second option</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" style="width: 100%;">
+                <mat-label>
+                    <mat-icon matSuffix>language</mat-icon>
+                    Linguagem
+                </mat-label>
+                <mat-select>
+                    <mat-option value="one">First option</mat-option>
+                    <mat-option value="two">Second option</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline" class="full-width">
+                <mat-label>
+                <mat-icon matSuffix>mode_edit</mat-icon>
+                Descricao
+            </mat-label>
+                <textarea matInput></textarea>
+            </mat-form-field>
+        </div>
+        <mat-slide-toggle></mat-slide-toggle>
+        <section>
+            <div class="button-row" style="margin-left: 80%;">
+                <button mat-raised-button routerLink="/courses" color="warn" style="margin: 1%;">
+                    Cancelar
+                </button>
+                <button mat-raised-button color="primary" style="margin: 1%;">
+                    Proximo
+                </button>
+            </div>
+        </section>
+    </mat-card>
+</div>

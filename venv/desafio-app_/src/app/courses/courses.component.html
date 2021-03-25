@@ -1,0 +1,66 @@
+<!-- CARDfilter -->
+<div>
+    <mat-card style="margin: 5%;">
+        <mat-grid-list cols="12">
+            <mat-grid-tile colspan="2">
+                Cursos
+            </mat-grid-tile>
+            <mat-grid-tile colspan="8">
+                <mat-form-field appearance="legacy" style="width: 100%;">
+                    <input matInput placeholder="Pesquisar curso">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2">
+                <button mat-raised-button color="primary">
+                    <mat-icon style="padding-right: 8px;">filter_list</mat-icon>
+                    Filter
+                </button>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</div>
+<!-- CARD -->
+<div>
+    <mat-card class="card">
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-header>
+          <mat-card-title>Shiba Inu</mat-card-title>
+        </mat-card-header>
+        <mat-divider inset=true></mat-divider>
+        <mat-card-content>
+            <mat-grid-list cols="12">
+                <mat-grid-tile colspan="4">
+                    <mat-icon >alarm</mat-icon>
+                    <span>0</span>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="4">
+                    <mat-icon >playlist_add_check</mat-icon>
+                    <span>0</span>
+                </mat-grid-tile>
+                <mat-grid-tile colspan="4">
+                    <mat-icon >group</mat-icon>
+                    <span>0</span>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">Visualizar</button>
+        </mat-card-actions>
+    </mat-card>
+<!-- CARD -->
+</div>
+<section>
+    <div class="button-row">
+        <div class="flex-container">
+          <div class="button-container">
+            <button mat-fab 
+                color="primary" 
+                class="fab-bottom-right"
+                routerLink="/course/new">
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+        </div>
+    </div>
+</section>
